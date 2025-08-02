@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Joker Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <!-- Matrix Canvas Background -->
+  <canvas id="codeCanvas"></canvas>
+
+  <!-- Entry Button Layer -->
+  <div id="enterLayer">
+    <a id="enterButton">ARE YOU WORTHY? HAHAHAHA</a>
+  </div>
+  <div class="main-wrapper">
+    <!-- Hidden Main Content -->
+    <div id="mainContent" class="hidden">
+      <nav class="navbar">Chaos? It's not a phase. It's my default setting</nav>
+      <nav class="navbar">WELCOME TO MY ASYLUM! HAHAHA</nav>
+      <div class="box1">
+        <div class="row">
+          <!-- LEFT COLUMN: Code + Button -->
+          <div class="left-columns">
+            <div class="lines">
+              <pre><code class="flines">
+import random
+
+def love():
+    if random.choice([True, False]):
+        raise Exception("HeartBrokenError")
+    return "Attach -> Expect -> Break"
+
+def life():
+    raise ImportError("No module named 'purpose'")
+
+def chaos():
+    return "mode = 'default'"
+
+class Human:
+    def live(self):
+        try:
+            print(love())
+            print(chaos())
+            life()
+            print("Everything's fine :)")
+        except Exception as e:
+            print(f"System Crash: {e}")
+            print("Rebooting... without hope.")
+
+if __name__ == "__main__":
+    Human().live()
+            </code></pre>
+              <!-- TODO: use this code for mobile devices  -->
+              <!-- class Human {
+  live() {
+    try {
+      if (Math.random() < 0.5) throw new Error("HeartBrokenError");
+      console.log("Attach -> Expect -> Break");
+      console.log("mode = 'default'");
+      throw new Error("Cannot find module 'purpose'");
+    } catch (e) {
+      console.log(`System Crash: ${e.message}`);
+      console.log("Rebooting... without hope.");
+    }
+  }
+}
+
+new Human().live();
+ -->
+            </div>
+          </div>
+          <!-- RIGHT CARD -->
+           <div class="right-columns">
+            <div class="fortune">
+            <div class="fortune-inner">
+              <div class="face front">
+                <h1 style="color: red">
+                  Flip the card, champ. Life’s a game, and you? You're already losing.
+                </h1>
+              </div>
+              <div class="face back">
+                <div class="back-wrapper">
+                  <div id="quoteText" class="quote"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+
+      <div class="button-under">
+        <a id="btn1" href="/confession">Confession Tape</a>
+        <a id="btn2" href="/tricks">Tricks</a>
+        <a id="btn3" href="#">Why So Certified?</a>
+        <a id="btn4" href="/failed-Experiments.html">Failed Experiments</a>
+        <a id="btn5" href="/note">Slip a Note into my Asylum</a>
+      </div>
+
+      <footer>"Madness is like gravity... all it takes is a little push."</footer>
+
+    </div>
+
+    <!--   JS -->
+    <script src="{{ url_for('static', filename='test.js') }}"></script>
+  </div>
+</body>
+
+</html>
